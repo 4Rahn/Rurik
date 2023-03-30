@@ -1,0 +1,11 @@
+D:\GitRep\Rurik\ARDIP\bin\Debug\ARDIP.exe.config
+D:\GitRep\Rurik\ARDIP\bin\Debug\ARDIP.exe
+D:\GitRep\Rurik\ARDIP\bin\Debug\ARDIP.pdb
+D:\GitRep\Rurik\ARDIP\obj\Debug\ARDIP.csproj.AssemblyReference.cache
+D:\GitRep\Rurik\ARDIP\obj\Debug\ARDIP.csproj.SuggestedBindingRedirects.cache
+D:\GitRep\Rurik\ARDIP\obj\Debug\ARDIP.Form1.resources
+D:\GitRep\Rurik\ARDIP\obj\Debug\ARDIP.Properties.Resources.resources
+D:\GitRep\Rurik\ARDIP\obj\Debug\ARDIP.csproj.GenerateResource.cache
+D:\GitRep\Rurik\ARDIP\obj\Debug\ARDIP.csproj.CoreCompileInputs.cache
+D:\GitRep\Rurik\ARDIP\obj\Debug\ARDIP.exe
+D:\GitRep\Rurik\ARDIP\obj\Debug\ARDIP.pdb
