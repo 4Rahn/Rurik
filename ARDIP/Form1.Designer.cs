@@ -47,7 +47,7 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.buttonLoad = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -242,15 +242,16 @@
             this.button8.Text = "Обработать все";
             this.button8.UseVisualStyleBackColor = true;
             // 
-            // button9
+            // buttonLoad
             // 
-            this.button9.Location = new System.Drawing.Point(784, 903);
-            this.button9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(142, 31);
-            this.button9.TabIndex = 11;
-            this.button9.Text = "Изменить путь";
-            this.button9.UseVisualStyleBackColor = true;
+            this.buttonLoad.Location = new System.Drawing.Point(784, 903);
+            this.buttonLoad.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonLoad.Name = "buttonLoad";
+            this.buttonLoad.Size = new System.Drawing.Size(142, 31);
+            this.buttonLoad.TabIndex = 11;
+            this.buttonLoad.Text = "Изменить путь";
+            this.buttonLoad.UseVisualStyleBackColor = true;
+            this.buttonLoad.Click += new System.EventHandler(this.buttonLoad_Click);
             // 
             // button10
             // 
@@ -336,7 +337,7 @@
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.button10);
-            this.Controls.Add(this.button9);
+            this.Controls.Add(this.buttonLoad);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.progressBar1);
@@ -384,7 +385,7 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button buttonLoad;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
