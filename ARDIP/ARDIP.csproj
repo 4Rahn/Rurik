@@ -71,6 +71,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -84,6 +85,90 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1L3nhZs7lZs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1v.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2v.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3v.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7k8hWmyiwtM.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\27l2uo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\455.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\531ca8cd726658654fe587bbeefdf6fa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\48094f3aaeb882f02d0b56a86856aae1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1432145514_103727249.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cd174a21eb62af7c77595901800d7655.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dwvwnWleY-o.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\E2pIarqfryw.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EZPrt8B0LDw.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IFlAD7nDs2I.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rHeaKYkqCA4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rutsr4a17mA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s1200.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T4tQupPkrPQ.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tlS3ypLOjJ4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upload-3-pic905-895x505-70089.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vtvs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\W5TPEZfThkA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wP5IJaZe7xo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YeCADixF2Lk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Безымянный.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\для мемов 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Мем 1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
