@@ -90,8 +90,8 @@ namespace ARDIP_Alfa
         private void pictureBox1_Paint(object sender, PaintEventArgs e)
         {
             figure = CreateGraphics();
-            List<Point> points = new List<Point>();
-            points.Add(new Point(...);
+            //List<Point> points = new List<Point>();
+            //points.Add(new Point(...);
 
             if (draw == 1) //прямоугольник
             {
@@ -136,6 +136,26 @@ namespace ARDIP_Alfa
         private void pictureBox1_MouseClick(object sender, MouseEventArgs e)
         {
             click = e.Location;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
+        {
+            //Pen blackPen = new Pen(Color.Black, 1);
+
+            // Рисовать так: 
+            //Graphics g = Graphics.FromImage(pictureBox1.Image);
+
+            //g.DrawLine(blackPen, 100,100,  600,100);
+
+            //blackPen.Dispose();
+            //g.Dispose();
+
+            //pictureBox1.Invalidate();
         }
     }
 }
