@@ -17,7 +17,9 @@ namespace ARDIP_Alfa
 
         Graphics figure;
         Point click;
-       
+        Bitmap Layer1;
+
+
         public Form1()
         {
             InitializeComponent();
@@ -49,6 +51,7 @@ namespace ARDIP_Alfa
                 try
                 {
                     pictureBox1.Image = new Bitmap(dialog1.FileName);
+                    
                     textBox1.Text = dialog1.FileName;
                 }
                 catch
@@ -92,6 +95,7 @@ namespace ARDIP_Alfa
             figure = CreateGraphics();
             //List<Point> points = new List<Point>();
             //points.Add(new Point(...);
+           // Bitmap layer1 = New Bitmap();
 
             if (draw == 1) //прямоугольник
             {
@@ -105,20 +109,26 @@ namespace ARDIP_Alfa
 
             if (draw == 3) //эллипс
             {
-               // { int v = 0;
-                  //  Point point_position1; Point point_position2;
-                  //  if (v == 0)
-                  //  {
-                  //      point_position1 = click;
-                 //       v++;
-                 //   }
-                 //   else if (v == 1)
-                 //   {
-                 //       point_position2 = click;
-                 //       v++;
-                 //   }
-                 //   else}
-                 figure.FillEllipse(Brushes.Black,  click.X, click.Y, 200, 200);
+                {
+                    int v = 0;
+                    Point point_position1 = new Point(0,0); Point point_position2 = new Point(0, 0);
+                    if (v == 0)
+                    {
+                        point_position1 = click;
+                        v++;
+                    }
+                    else if (v == 1)
+                    {
+                        point_position2 = click;
+                        v++;
+                    }
+                    else
+                    { 
+                        figure.FillEllipse(Brushes.Black, point_position1.X, point_position1.Y, point_position2.X, point_position2.Y);
+                        v = 0;
+                    }
+                }
+
                    
             }
         }
@@ -156,6 +166,12 @@ namespace ARDIP_Alfa
             //g.Dispose();
 
             //pictureBox1.Invalidate();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Form2 newForm = new Form2();
+            newForm.Show();
         }
     }
 }

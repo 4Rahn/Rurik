@@ -9,3 +9,15 @@ F:\GitRep\Rurik\ARDIP Alfa\obj\Debug\ARDIP Alfa.csproj.GenerateResource.cache
 F:\GitRep\Rurik\ARDIP Alfa\obj\Debug\ARDIP Alfa.csproj.CoreCompileInputs.cache
 F:\GitRep\Rurik\ARDIP Alfa\obj\Debug\ARDIP Alfa.exe
 F:\GitRep\Rurik\ARDIP Alfa\obj\Debug\ARDIP Alfa.pdb
+D:\GitRep\Rurik\ARDIP Alfa\bin\Debug\ARDIP Alfa.exe.config
+D:\GitRep\Rurik\ARDIP Alfa\bin\Debug\ARDIP Alfa.exe
+D:\GitRep\Rurik\ARDIP Alfa\bin\Debug\ARDIP Alfa.pdb
+D:\GitRep\Rurik\ARDIP Alfa\obj\Debug\ARDIP Alfa.csproj.AssemblyReference.cache
+D:\GitRep\Rurik\ARDIP Alfa\obj\Debug\ARDIP Alfa.csproj.SuggestedBindingRedirects.cache
+D:\GitRep\Rurik\ARDIP Alfa\obj\Debug\ARDIP_Alfa.Form1.resources
+D:\GitRep\Rurik\ARDIP Alfa\obj\Debug\ARDIP_Alfa.Properties.Resources.resources
+D:\GitRep\Rurik\ARDIP Alfa\obj\Debug\ARDIP Alfa.csproj.GenerateResource.cache
+D:\GitRep\Rurik\ARDIP Alfa\obj\Debug\ARDIP Alfa.csproj.CoreCompileInputs.cache
+D:\GitRep\Rurik\ARDIP Alfa\obj\Debug\ARDIP Alfa.exe
+D:\GitRep\Rurik\ARDIP Alfa\obj\Debug\ARDIP Alfa.pdb
+D:\GitRep\Rurik\ARDIP Alfa\obj\Debug\ARDIP_Alfa.Form2.resources
