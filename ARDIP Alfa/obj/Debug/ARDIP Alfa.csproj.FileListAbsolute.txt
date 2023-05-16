@@ -21,3 +21,4 @@ D:\GitRep\Rurik\ARDIP Alfa\obj\Debug\ARDIP Alfa.csproj.CoreCompileInputs.cache
 D:\GitRep\Rurik\ARDIP Alfa\obj\Debug\ARDIP Alfa.exe
 D:\GitRep\Rurik\ARDIP Alfa\obj\Debug\ARDIP Alfa.pdb
 D:\GitRep\Rurik\ARDIP Alfa\obj\Debug\ARDIP_Alfa.Form2.resources
+F:\GitRep\Rurik\ARDIP Alfa\obj\Debug\ARDIP_Alfa.Form2.resources

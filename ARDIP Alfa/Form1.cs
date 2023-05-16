@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -17,7 +19,50 @@ namespace ARDIP_Alfa
 
         Graphics figure;
         Point click;
-        Bitmap Layer1;
+        List<Image> Layers = new List<Image>();
+
+        private void WaitForMouseClick()
+        {
+            var mousePosition = Cursor.Position;
+
+            while (true)
+            {
+                Application.DoEvents();
+
+                if (Control.MouseButtons == MouseButtons.Left)
+                {
+                    // Действия при нажатии левой кнопки мыши
+                    break;
+                }
+                else if (Control.MouseButtons == MouseButtons.Right)
+                {
+                    // Действия при нажатии правой кнопки мыши
+                    break;
+                }
+                else if (Control.MouseButtons == MouseButtons.Middle)
+                {
+                    // Действия при нажатии средней кнопки мыши
+                    break;
+                }
+
+                if (Cursor.Position != mousePosition)
+                {
+                    // Действия при перемещении курсора мыши
+                    mousePosition = Cursor.Position;
+                }
+            }
+        }
+        private void DrawSquareOnImage(PictureBox pictureBox1, int x, int y, int size)
+        {
+            Bitmap bmp = (Bitmap)pictureBox1.Image.Clone(); // загрузка изображения в Bitmap
+            Graphics g = Graphics.FromImage(bmp); // создание Graphics для рисования на изображении
+           
+
+            // рисование квадрата
+            g.FillRectangle(Brushes.Black, x, y, size, size);
+
+            pictureBox1.Image = bmp; // сохранение изображения в PictureBox
+        }
 
 
         public Form1()
@@ -40,7 +85,7 @@ namespace ARDIP_Alfa
             draw = 3;
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)//Загрузка изображения
         {
 
             OpenFileDialog dialog1 = new OpenFileDialog();
@@ -51,7 +96,9 @@ namespace ARDIP_Alfa
                 try
                 {
                     pictureBox1.Image = new Bitmap(dialog1.FileName);
-                    
+                    var dn = Path.GetFileName(Path.GetDirectoryName(dialog1.FileName));
+                    textBox3.Text = dn;
+
                     textBox1.Text = dialog1.FileName;
                 }
                 catch
@@ -64,7 +111,7 @@ namespace ARDIP_Alfa
         private void button5_Click(object sender, EventArgs e)
         {
             SaveFileDialog dialog2 = new SaveFileDialog();
-            dialog2.Title = "Сохранить картинку как...";
+            dialog2.Title = "Изменить путь сохранения...";
             dialog2.OverwritePrompt = true; //Перезаписать файл?
             dialog2.CheckPathExists = true; //Путь не существует
             dialog2.Filter = "Image Files(*.BMP)|*.BMP|Image Files(*.JPG)|*.JPG|Image Files(*.PNG)|*.PNG|Image Files(*GIF)|*.GIF|All files (*.*)|*.*";
@@ -99,57 +146,65 @@ namespace ARDIP_Alfa
 
             if (draw == 1) //прямоугольник
             {
+                //Pen pen = new Pen(Color.Red, 5);
+                //Rectangle rect = new Rectangle(50, 50, 100, 100);
+                //e.Graphics.DrawRectangle(pen, rect);
+                {
+                    int x = 50; // координата x левого верхнего угла квадрата
+                    int y = 50; // координата y левого верхнего угла квадрата
+                    int size = 100; // размер квадрата
 
+                    DrawSquareOnImage(pictureBox1, x, y, size);
+                }
             }
 
-            if (draw == 2) //многоугольник
+            if (draw == 2) //красная линия
             {
+                Graphics g = e.Graphics;
 
+                // добавляем новый слой
+                Bitmap layer = new Bitmap(pictureBox1.Width, pictureBox1.Height);
+                Graphics layerGraphics = Graphics.FromImage(layer);
+
+                // рисуем на слое
+                Pen pen = new Pen(Color.Red, 3);
+                layerGraphics.DrawLine(pen, 0, 0, pictureBox1.Width, pictureBox1.Height);
+
+                // добавляем слой к PictureBox
+                g.DrawImage(layer, 0, 0);
             }
 
             if (draw == 3) //эллипс
             {
                 {
-                    int v = 0;
-                    Point point_position1 = new Point(0,0); Point point_position2 = new Point(0, 0);
-                    if (v == 0)
-                    {
-                        point_position1 = click;
-                        v++;
-                    }
-                    else if (v == 1)
-                    {
-                        point_position2 = click;
-                        v++;
-                    }
-                    else
-                    { 
-                        figure.FillEllipse(Brushes.Black, point_position1.X, point_position1.Y, point_position2.X, point_position2.Y);
-                        v = 0;
-                    }
-                }
-
-                   
+                        int v = 0;
+                        while (v < 3)
+                        {
+                        Bitmap bmp = (Bitmap)pictureBox1.Image.Clone(); // загрузка изображения в Bitmap
+                        Point point_position1 = new Point(0, 0); Point point_position2 = new Point(0, 0);
+                            if (v == 0)
+                            {
+                                point_position1 = click;
+                                WaitForMouseClick();
+                        }
+                            else if (v == 1)
+                            {
+                                point_position2 = click;
+                            }
+                            else
+                            {
+                                figure.FillEllipse(Brushes.Black, point_position1.X, point_position1.Y, point_position2.X, point_position2.Y);
+                                v = 0;
+                            }
+                            v++;
+                        }
+                }  
             }
-        }
-
-        private void tbx_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tby_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void pictureBox1_MouseClick(object sender, MouseEventArgs e)
         {
             click = e.Location;
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
 
         }
 
@@ -173,5 +228,6 @@ namespace ARDIP_Alfa
             Form2 newForm = new Form2();
             newForm.Show();
         }
+
     }
 }

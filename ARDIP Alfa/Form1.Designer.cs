@@ -38,15 +38,15 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button7 = new System.Windows.Forms.Button();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(18, 18);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button1.Location = new System.Drawing.Point(12, 12);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(135, 82);
+            this.button1.Size = new System.Drawing.Size(90, 53);
             this.button1.TabIndex = 0;
             this.button1.Text = "Прямоугольник";
             this.button1.UseVisualStyleBackColor = true;
@@ -54,10 +54,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(18, 109);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button2.Location = new System.Drawing.Point(12, 71);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(135, 82);
+            this.button2.Size = new System.Drawing.Size(90, 53);
             this.button2.TabIndex = 1;
             this.button2.Text = "Многоугольник";
             this.button2.UseVisualStyleBackColor = true;
@@ -65,10 +64,9 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(18, 200);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button3.Location = new System.Drawing.Point(12, 130);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(135, 82);
+            this.button3.Size = new System.Drawing.Size(90, 53);
             this.button3.TabIndex = 2;
             this.button3.Text = "Круг";
             this.button3.UseVisualStyleBackColor = true;
@@ -76,10 +74,9 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(18, 291);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button4.Location = new System.Drawing.Point(12, 189);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(135, 82);
+            this.button4.Size = new System.Drawing.Size(90, 53);
             this.button4.TabIndex = 3;
             this.button4.Text = "Открыть";
             this.button4.UseVisualStyleBackColor = true;
@@ -87,10 +84,9 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(18, 382);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button5.Location = new System.Drawing.Point(12, 248);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(135, 82);
+            this.button5.Size = new System.Drawing.Size(90, 53);
             this.button5.TabIndex = 4;
             this.button5.Text = "Путь сохранения";
             this.button5.UseVisualStyleBackColor = true;
@@ -98,10 +94,9 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(18, 472);
-            this.button6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button6.Location = new System.Drawing.Point(12, 307);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(135, 82);
+            this.button6.Size = new System.Drawing.Size(90, 53);
             this.button6.TabIndex = 5;
             this.button6.Text = "Сохранить";
             this.button6.UseVisualStyleBackColor = true;
@@ -109,51 +104,56 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(164, 18);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(109, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1018, 535);
+            this.pictureBox1.Size = new System.Drawing.Size(679, 348);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             this.pictureBox1.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox1_Paint);
             this.pictureBox1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseClick);
             this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseMove);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(18, 563);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox1.Location = new System.Drawing.Point(12, 366);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(696, 26);
+            this.textBox1.Size = new System.Drawing.Size(228, 20);
             this.textBox1.TabIndex = 7;
             this.textBox1.Text = "Путь Загрузки";
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(18, 605);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox2.Location = new System.Drawing.Point(12, 393);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(696, 26);
+            this.textBox2.Size = new System.Drawing.Size(465, 20);
             this.textBox2.TabIndex = 8;
             this.textBox2.Text = "Путь Сохранения";
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(981, 562);
+            this.button7.Location = new System.Drawing.Point(695, 366);
+            this.button7.Margin = new System.Windows.Forms.Padding(2);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(139, 69);
+            this.button7.Size = new System.Drawing.Size(93, 45);
             this.button7.TabIndex = 9;
             this.button7.Text = "Рисование";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(320, 366);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(370, 20);
+            this.textBox3.TabIndex = 10;
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 654);
+            this.ClientSize = new System.Drawing.Size(800, 425);
+            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -164,7 +164,6 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.Text = "ARDIP Alfa";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -185,6 +184,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.TextBox textBox3;
     }
 }
 
