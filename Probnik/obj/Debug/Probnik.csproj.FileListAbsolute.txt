@@ -1,0 +1,11 @@
+F:\GitRep\Rurik\Probnik\obj\Debug\Probnik.csproj.AssemblyReference.cache
+F:\GitRep\Rurik\Probnik\obj\Debug\Probnik.csproj.SuggestedBindingRedirects.cache
+F:\GitRep\Rurik\Probnik\obj\Debug\Probnik.Form1.resources
+F:\GitRep\Rurik\Probnik\obj\Debug\Probnik.Properties.Resources.resources
+F:\GitRep\Rurik\Probnik\obj\Debug\Probnik.csproj.GenerateResource.cache
+F:\GitRep\Rurik\Probnik\obj\Debug\Probnik.csproj.CoreCompileInputs.cache
+F:\GitRep\Rurik\Probnik\bin\Debug\Probnik.exe.config
+F:\GitRep\Rurik\Probnik\bin\Debug\Probnik.exe
+F:\GitRep\Rurik\Probnik\bin\Debug\Probnik.pdb
+F:\GitRep\Rurik\Probnik\obj\Debug\Probnik.exe
+F:\GitRep\Rurik\Probnik\obj\Debug\Probnik.pdb

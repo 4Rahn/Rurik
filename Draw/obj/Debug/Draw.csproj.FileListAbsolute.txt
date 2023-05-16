@@ -1,0 +1,11 @@
+F:\GitRep\Rurik\Draw\bin\Debug\Draw.exe.config
+F:\GitRep\Rurik\Draw\bin\Debug\Draw.exe
+F:\GitRep\Rurik\Draw\bin\Debug\Draw.pdb
+F:\GitRep\Rurik\Draw\obj\Debug\Draw.csproj.AssemblyReference.cache
+F:\GitRep\Rurik\Draw\obj\Debug\Draw.csproj.SuggestedBindingRedirects.cache
+F:\GitRep\Rurik\Draw\obj\Debug\Draw.Form1.resources
+F:\GitRep\Rurik\Draw\obj\Debug\Draw.Properties.Resources.resources
+F:\GitRep\Rurik\Draw\obj\Debug\Draw.csproj.GenerateResource.cache
+F:\GitRep\Rurik\Draw\obj\Debug\Draw.csproj.CoreCompileInputs.cache
+F:\GitRep\Rurik\Draw\obj\Debug\Draw.exe
+F:\GitRep\Rurik\Draw\obj\Debug\Draw.pdb
