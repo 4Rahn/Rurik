@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
 namespace ARDIP_Alfa
 {
@@ -89,6 +90,7 @@ namespace ARDIP_Alfa
         {
 
             OpenFileDialog dialog1 = new OpenFileDialog();
+            dialog1.Title = "Загрузить изображение...";
             dialog1.Filter = "image Filter(*.BMP;*.JPG;*.PNG;*GIF)|*.BMP;*.JPG;*.PNG;*.GIF|All files (*.*)|*.*";
 
             if (dialog1.ShowDialog() == DialogResult.OK)
